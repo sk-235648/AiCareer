@@ -134,7 +134,7 @@ function HomePage() {
             </h1>
             <div className="text-5xl md:text-4xl font-bold mb-8">
               <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-                'AI Carreer BootCamP'
+                &apos;AI Carreer &lsquo;
               </span>
             </div>
 
