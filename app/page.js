@@ -140,9 +140,7 @@ function HomePage() {
 
             <p className="text-lg md:text-xl text-gray-300 mb-6 leading-relaxed">
               Click on the{" "}
-              <span className="font-semibold text-purple-400 ">
-                Open Here
-              </span>{" "}
+              <span className="font-semibold text-purple-400 ">Open Here</span>{" "}
               button to apply.
             </p>
 
@@ -151,19 +149,37 @@ function HomePage() {
                 Get Started
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button onClick={handleClick} className="cursor-pointer border-2 border-purple-400 hover:bg-purple-800 px-8 py-4 rounded-full text-lg font-semibold transition-all">
+              <button
+                onClick={handleClick}
+                className="cursor-pointer border-2 border-purple-400 hover:bg-purple-800 px-8 py-4 rounded-full text-lg font-semibold transition-all"
+              >
                 Open Here
               </button>
             </div>
           </div>
 
-          {/* Right Side: Poster */}
-          <div className="flex justify-center md:justify-end">
-            <img
-              src="/poster.jpg"
-              alt="AI Carreer BootCamP"
-              className="max-w-full md:max-w-md rounded-2xl shadow-lg"
-            />
+          {/* Right Side: Poster Slider */}
+          <div className="flex justify-center md:justify-end w-full md:max-w-md">
+            <div className="relative w-full overflow-hidden rounded-2xl shadow-lg">
+              <div className="flex animate-slide">
+                {/* Duplicate the same image for now (can add more later) */}
+                <img
+                  src="/poster.jpg"
+                  alt="AI Carreer BootCamP"
+                  className="w-full flex-shrink-0 object-cover"
+                />
+                <img
+                  src="/poster.jpg"
+                  alt="AI Carreer BootCamP"
+                  className="w-full flex-shrink-0 object-cover"
+                />
+                <img
+                  src="/poster.jpg"
+                  alt="AI Carreer BootCamP"
+                  className="w-full flex-shrink-0 object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
